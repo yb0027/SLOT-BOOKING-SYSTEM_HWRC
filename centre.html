@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWRC Centres</title>
+    <link rel="stylesheet" href="centre-styles.css">
+    <style>
+        .mapouter {
+            position: relative;
+            text-align: right;
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+        }
+        .gmap_canvas {
+            overflow: hidden;
+            background: none!important;
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+        }
+        .gmap_iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .centre-info {
+            margin-top: 10px;
+        }
+        .latitude, .longitude {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Veolia HWRC Centres</h1>
+            <div class="auth-buttons">
+                <a href="login.html" class="auth-button">Login</a>
+                <a href="registration.html" class="auth-button">Register</a>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="centre.html">Centre</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="centres">
+                <div class="container">
+                    <h2>Our Centres</h2>
+                    <p>We have multiple HWRC centres to serve you. Click on a centre to see more details:</p>
+                    <ul>
+                        <li>
+                            <a href="#" onclick="showCentreDetails('centre1')">Centre 1</a>
+                            <div id="centre1" class="centre-details">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                            src="https://maps.google.com/maps?q=Leicester%20Square&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                        </iframe>
+                                        <a href="https://connectionsgame.org/">Connections Game</a>
+                                    </div>
+                                </div>
+                                <div class="centre-info">
+                                    <p>Contact Number: +1-234-567-8901</p>
+                                    <p>Timings: Monday to Friday, 9:00 AM - 5:00 PM</p>
+                                    <p>Latitude: <span class="latitude">51.510357</span></p>
+                                    <p>Longitude: <span class="longitude">-0.128082</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showCentreDetails('centre2')">Centre 2</a>
+                            <div id="centre2" class="centre-details">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                            src="https://maps.google.com/maps?q=Hampstead%20Heath&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                        </iframe>
+                                        <a href="https://connectionsgame.org/">Connections Game</a>
+                                    </div>
+                                </div>
+                                <div class="centre-info">
+                                    <p>Contact Number: +1-234-567-8902</p>
+                                    <p>Timings: Monday to Friday, 10:30 AM - 6:30 PM</p>
+                                    <p>Latitude: <span class="latitude">51.556603</span></p>
+                                    <p>Longitude: <span class="longitude">-0.178116</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showCentreDetails('centre3')">Centre 3</a>
+                            <div id="centre3" class="centre-details">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                            src="https://maps.google.com/maps?q=Chelsea%20Flower%20Show&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                        </iframe>
+                                        <a href="https://connectionsgame.org/">Connections Game</a>
+                                    </div>
+                                </div>
+                                <div class="centre-info">
+                                    <p>Contact Number: +1-234-567-8903</p>
+                                    <p>Timings: Monday to Friday, 9:30 AM - 8:00 PM</p>
+                                    <p>Latitude: <span class="latitude">51.487027</span></p>
+                                    <p>Longitude: <span class="longitude">-0.170343</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Add more centres as needed -->
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veolia HWRC Booking System. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function showCentreDetails(centreId) {
+            var centres = document.getElementsByClassName('centre-details');
+            for (var i = 0; i < centres.length; i++) {
+                centres[i].style.display = 'none';
+            }
+            document.getElementById(centreId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

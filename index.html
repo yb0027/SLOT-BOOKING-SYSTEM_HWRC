@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veolia HWRC Slot Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>Veolia HWRC Slot Booking</h1>
+            <div class="auth-buttons">
+                <button onclick="location.href='/login'">Login</button>
+                <button onclick="location.href='/registration'">Register</button>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">User</button>
+                    <div class="dropdown-content">
+                        <a href="editp.html">Edit Profile</a>
+                        <a href="#">Sign Out</a>
+                    </div>
+                </div>
+                <div id="google_translate_element" class="auth-button"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#home" onclick="toggleSection('home')">Home</a></li>
+            <li><a href="#about-us" onclick="toggleSection('about-us')">About Us</a></li>
+            <li><a href="#how-it-works" onclick="toggleSection('how-it-works')">How It Works</a></li>
+            <li><a href="#booking" onclick="toggleSection('booking')">Book a Slot</a></li>
+            <li><a href="#contact" onclick="toggleSection('contact')">Contact</a></li>
+            <li><a href="centre.html">Centre</a></li>
+            <li><a href="services.html">Services</a></li>
+
+        </ul>
+    </nav>
+      
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h2>Experience Seamless Waste Management</h2>
+                <div class="content">
+                    <p>Welcome to Veolia HWRC Slot Booking - your gateway to sustainable waste management solutions.</p>
+                    <p>With Veolia's intuitive online booking system, residents can effortlessly schedule their visits to any of our 25 HWRCs across (Manchester,London,Yorkshire,Liverpool etc). Say goodbye to the hassle of navigating through council websites.</p>
+                    <p>Join us in our commitment to environmental stewardship and community well-being.</p>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Efficient waste disposal processes</li>
+                        <li>Convenient access to recycling facilities</li>
+                        <li>Professional staff dedicated to ensuring a smooth experience</li>
+                        <li>Continuous innovation in waste management technology</li>
+                        <li>Community engagement programs promoting sustainable practices</li>
+                    </ul>
+                </div>
+                
+                <img src="SW.png" alt="lifecycle">  
+            </div>
+        </section>
+        
+
+        <section id="about-us">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Veolia is at the forefront of revolutionizing waste management solutions. With our extensive network of 25 HWRCs, we understand the importance of accessibility and convenience for residents.</p>
+                <p>Driven by the recognition that the current user experience of booking time slots via council websites is subpar, we have embarked on a mission to transform the way residents interact with waste management services.</p>
+                <p>At Veolia, we believe in innovation that serves the community. Our upcoming booking app is not just about scheduling visits; it's about empowering residents with a seamless, user-friendly platform that puts their needs first.</p>
+                <p>Join us in our journey towards a cleaner, greener future.</p>
+
+                <p><strong>Motto:</strong> "Committed to Sustainable Solutions"</p>
+                <img src="Waste-Management-Solution.png" alt="1">  
+                
+            </div>
+        </section>
+           
+        <section id="challenges">
+            <div class="container">
+                <h2>Challenges</h2>
+                <p>Residents and workers alike encounter various hurdles when navigating the waste management landscape. Understanding these challenges is crucial to enhancing the overall experience and ensuring the efficiency and safety of waste disposal processes:</p>
+                
+                <h3>For Residents:</h3>
+                <ul>
+                    <li><strong>Limited Slot Availability:</strong> Securing preferred time slots can be challenging due to limited availability, leading to scheduling difficulties for residents.</li>
+                    <li><strong>Complex Booking Procedures:</strong> Council websites often feature complex and cumbersome booking processes, resulting in frustration and errors for users.</li>
+                    <li><strong>Access to Information:</strong> Difficulty accessing necessary information about HWRC locations and the services they offer adds another layer of challenge for residents.</li>
+                </ul>
+        
+                <h3>For Workers:</h3>
+                <ul>
+                    <li><strong>Visitor Flow Management:</strong> Maintaining a smooth visitor flow and ensuring compliance with safety guidelines, particularly during peak times, poses a significant challenge for HWRC workers.</li>
+                    <li><strong>Overcrowding and Wait Times:</strong> Dealing with overcrowding and long wait times can impact the efficiency and safety of waste management operations at HWRCs.</li>
+                    <li><strong>Addressing Queries and Concerns:</strong> Workers must address queries and concerns from residents regarding booking procedures, site regulations, and other related issues, adding to their workload.</li>
+                </ul>
+        
+                <p>By recognizing and addressing these challenges, Veolia is committed to making waste management more efficient, accessible, and sustainable for both residents and workers.</p>
+            </div>
+        </section>
+        
+        <section id="covid-guidelines">
+            <div class="container">
+                <h2>COVID-19 Safety Guidelines</h2>
+                <p>Review our safety guidelines before visiting our HWRCs.</p>
+                
+                <h3>Guidelines:</h3>
+                <ul>
+                    <li>Maintain social distancing of at least 2 meters (6 feet) from others at all times.</li>
+
+                    <li>Wear a face covering or mask while on-site, unless exempted for medical reasons.</li>
+
+                    <li>Use hand sanitizing stations provided before and after handling waste materials.</li>
+
+                    <li>Follow directional signage and staff instructions to navigate the site safely.</li>
+
+                    <li>Limit the number of individuals from your household visiting the HWRC to essential personnel only.</li>
+
+                    <li>Stay home if you or anyone in your household is experiencing symptoms of COVID-19 or is required to self-isolate.</li>
+                </ul>
+                
+                <h3>Precautions:</h3>
+                <ul>
+                    <li>Regularly clean and disinfect frequently touched surfaces, such as door handles</li>
+                    <li>Avoid touching your face, eyes, nose, or mouth with unwashed hands.</li>
+                    <li>Use contactless payment methods whenever possible to minimize physical contact.</li>
+                    <li>Dispose of any used personal protective equipment (PPE), such as gloves or masks, in designated bins provided on-site.</li>
+                    <li>If using reusable containers for waste disposal, ensure they are thoroughly cleaned and sanitized before and after each visit.</li>
+                    <li>Be patient and respectful towards staff and other visitors, as they work to maintain a safe environment for everyone.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <p>Embark on your journey to sustainable waste management by following these simple steps:</p>
+                <ul>
+                    <li>Efficient waste disposal processes</li>
+                    <li>Convenient access to recycling facilities</li>
+                    <li>Reduced environmental impact through responsible waste management</li>
+                    <li>Professional staff dedicated to ensuring a smooth experience</li>
+                    <li>Continuous innovation in waste management technology</li>
+                    <li>Community engagement programs promoting sustainable practices</li>
+                </ul>
+                <p>Join us in our commitment to environmental stewardship and community well-being. Together, we can make a difference, one booking at a time.</p>
+            </div>
+        </section>
+
+        <section id="booking">
+            <div class="container">
+                <h2>Book Your Time Slot</h2>
+                <p>Select your nearest HWRC and choose a convenient time slot for your visit.</p>
+                <form id="slotForm" action="/bookSlot" method="post">
+                <form id="slotForm"> <!-- Changed form ID to slotForm -->
+                    <label for="hwrc">Choose HWRC:</label>
+                    <select id="hwrc" name="hwrc">
+                        <option value="site1">Site 1</option>
+                        <option value="site2">Site 2</option>
+                        <option value="site3">Site 3</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <label for="slotDate">Choose Date:</label> <!-- Changed id to slotDate -->
+                    <input type="date" id="slotDate" name="slotDate" required>
+                    <label for="slotTime">Choose Time Slot:</label> <!-- Changed id to slotTime -->
+                    <select id="slotTime" name="slotTime">
+                        <option value="09:00-10:30">09:00-10:30</option>
+                        <option value="11:00-12:00">11:00-12:00</option>
+                        <option value="13:00-14:00">13:00-14:00</option>
+                        <option value="14:30-16:30">14:30-16:30</option>
+                        <option value="17:00-20:00">17:00-20:00</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <button type="submit">Book Now</button>
+                </form>
+                <!-- Add this inside the body, before the closing </body> tag -->
+
+           <div id="popupMessage" class="popup-message hidden">
+           <span id="popupMessageText"></span>
+    <button id="closePopup" onclick="closePopup()">Close</button>
+</div>
+
+<style>
+    .popup-message {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    .popup-message button {
+        margin-top: 10px;
+    }
+    .hidden {
+        display: none;
+    }
+</style>
+
+            </div>
+        </section>
+        
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, please <a href="mailto:info@veolia.com">email us</a>.</p>
+                <p>Follow us on social media:</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+                    <img src="Facebook_icon.jpg" alt="Facebook_icon">
+
+                    <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+                    <img src="Logo_of_Twitter.svg.webp" alt="Twitter">
+
+                    <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+                    <img src="Instagram_icon.png.webp" alt="Instagram_icon">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            
+            <p>&copy; 2024 Veolia HWRC Booking System. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+
+        }
+    </script>
+    
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        
+    </script>
+
+    <script src="scripts.js"></script>
+
+    <script>
+        // scripts.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slotForm = document.getElementById('slotForm');
+    
+    slotForm.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent the form from submitting the default way
+        
+        const formData = new FormData(slotForm);
+        const formObject = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('/bookSlot', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formObject),
+            });
+
+            const result = await response.json();
+            if (result.status === 'success') {
+                showPopup('Booking successful');
+            } else {
+                showPopup(result.message);
+            }
+        } catch (error) {
+            console.error('Error booking slot:', error);
+            showPopup('An error occurred while booking the slot. Please try again.');
+        }
+    });
+});
+
+function showPopup(message) {
+    const popupMessage = document.getElementById('popupMessage');
+    const popupMessageText = document.getElementById('popupMessageText');
+    popupMessageText.textContent = message;
+    popupMessage.classList.remove('hidden');
+    popupMessage.style.display = 'block';
+}
+
+function closePopup() {
+    const popupMessage = document.getElementById('popupMessage');
+    popupMessage.style.display = 'none';
+}
+
+    </script>
+    
+</body>
+</html>
+

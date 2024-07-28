@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #updateProfileForm {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #message {
+            margin-top: 15px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        #message.success {
+            background-color: #7FFF00;
+            color: #006400;
+        }
+
+        #message.error {
+            background-color: #FF6347;
+            color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Profile</h1>
+    <form id="updateProfileForm">
+        <label for="currentUsername">Current Username:</label>
+        <input type="text" id="currentUsername" name="currentUsername" required>
+
+        <label for="currentPassword">Current Password:</label>
+        <input type="password" id="currentPassword" name="currentPassword" required>
+
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('updateProfileForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const currentUsername = document.getElementById('currentUsername').value;
+            const currentPassword = document.getElementById('currentPassword').value;
+            const newPassword = document.getElementById('newPassword').value;
+
+            try {
+                const response = await fetch('/submit-profile', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ currentUsername, currentPassword, newPassword })
+                });
+
+                const responseData = await response.json();
+                displayMessage(responseData.message, response.ok ? 'success' : 'error');
+            } catch (error) {
+                console.error('Error updating profile:', error);
+                displayMessage('Error updating profile. Please try again.', 'error');
+            }
+        });
+
+        function displayMessage(message, messageType) {
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = message;
+            messageElement.className = ''; // clear previous classes
+
+            if (messageType === 'success') {
+                messageElement.classList.add('success');
+            } else if (messageType === 'error') {
+                messageElement.classList.add('error');
+            }
+        }
+    </script>
+</body>
+</html>

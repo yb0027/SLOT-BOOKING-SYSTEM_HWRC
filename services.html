@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veolia HWRC Services</title>
+    <link rel="stylesheet" href="services-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Veolia HWRC Services</h1>
+            <div class="auth-buttons">
+                <a href="login.html" class="auth-button">Login</a>
+                <a href="registration.html" class="auth-button">Register</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="centre.html">Centre</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>We offer a variety of services to help you manage your waste effectively:</p>
+                <ul>
+                    <li>
+                        <h3>General Waste Disposal</h3>
+                        <p>We provide safe and efficient disposal of non-recyclable waste, making it easy for you to keep your environment clean.</p>
+                        
+                        <div class="container">
+                            <div class="image-row">
+                                <img src="Non recycling.jpg" alt="Non recycling">
+                                <img src="HW1.webp" alt="HW">
+                            </div>
+                        
+
+                        <p><strong>Accepted Items:</strong> Household trash, non-recyclable plastics, etc.</p>
+                        <p><strong>Hours:</strong> Mon-Sun 8:00 AM - 8:00 PM</p>
+                        <p><a href="#" onclick="toggleServiceDetails('service1')">Learn More</a></p>
+                        <div id="service1" class="service-details">
+                            <h4>FAQs</h4>
+                            <p><strong>Q:</strong> What items are considered general waste?</p>
+                            <p><strong>A:</strong> Items that cannot be recycled, such as certain plastics, household trash, etc.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Recycling Services</h3>
+                        <p>We help you dispose of recyclable materials in an environmentally friendly manner, contributing to a sustainable future.</p>
+
+                        <div class="container">
+                            <div class="image-row">
+                                <img src="PaperPlastic.jpg" alt="PaperPlastic">
+                                <img src="Plastic.jpg" alt="Paper">
+                            </div>
+
+                        <p><strong>Accepted Items:</strong> Paper, cardboard, glass, certain plastics, etc.</p>
+                        <p><strong>Hours:</strong> Mon-Sun 8:00 AM - 8:00 PM</p>
+                        <p><a href="#" onclick="toggleServiceDetails('service2')">Learn More</a></p>
+                        <div id="service2" class="service-details">
+                            <h4>FAQs</h4>
+                            <p><strong>Q:</strong> What materials can be recycled?</p>
+                            <p><strong>A:</strong> Paper, cardboard, glass, certain plastics, etc.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Hazardous Waste Management</h3>
+                        <p>We handle hazardous waste disposal, ensuring safe and compliant management of dangerous materials.</p>
+                        
+                        <div class="container">
+                            <div class="image-row">
+                                <img src="Household-Hazardous-Materials.png" alt="Household">
+                                <img src="Hazardous.png" alt="Hospital">
+                            </div>
+
+                        <p><strong>Accepted Items:</strong> Chemicals, batteries, paints,Hospital Waste etc.</p>
+                        <p><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+                        <p><a href="#" onclick="toggleServiceDetails('service3')">Learn More</a></p>
+                        <div id="service3" class="service-details">
+                            <h4>FAQs</h4>
+                            <p><strong>Q:</strong> How should hazardous waste be prepared for disposal?</p>
+                            <p><strong>A:</strong> Ensure items are securely sealed and labeled.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Composting Services</h3>
+                        <p>Our composting services help you convert organic waste into useful compost for gardening and landscaping.</p>
+                        <div class="container">
+                            <div class="image-row">
+                                <img src="Food Scraps.jpg" alt="Food">
+                                <img src="Food.png" alt="FS">
+                            </div>
+                        
+
+                        <p><strong>Accepted Items:</strong> Food scraps, yard waste, etc.</p>
+                        <p><strong>Hours:</strong> Mon-Sun 8:00 AM - 6:00 PM</p>
+                        <p><a href="#" onclick="toggleServiceDetails('service4')">Learn More</a></p>
+                        <div id="service4" class="service-details">
+                            <h4>FAQs</h4>
+                            <p><strong>Q:</strong> What items are suitable for composting?</p>
+                            <p><strong>A:</strong> Food scraps, yard waste, and other organic materials.</p>
+                        </div>
+                    </li>
+                    <!-- Additional services -->
+                    <li>
+                        <h3>E Waste</h3>
+                        <p>We offer recycling services for electronic waste, including old computers, phones, and other electronics.</p>
+                        <div class="container">
+                            <div class="image-row">
+                                <img src="E Waste.webp" alt="EW">
+                                <img src="E Waste 1.png" alt="EW-1">
+                            </div>
+
+                        <p><strong>Accepted Items:</strong> Computers, phones, printers, TVs, etc.</p>
+                        <p><strong>Hours:</strong> Mon-Sun 9:00 AM - 5:00 PM</p>
+                        <p><a href="#" onclick="toggleServiceDetails('service5')">Learn More</a></p>
+                        <div id="service5" class="service-details">
+                            <h4>FAQs</h4>
+                            <p><strong>Q:</strong> What electronics can be recycled?</p>
+                            <p><strong>A:</strong> Computers, phones, printers, TVs, etc.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veolia HWRC Booking System. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleServiceDetails(serviceId) {
+            var service = document.getElementById(serviceId);
+            if (service.style.display === 'block') {
+                service.style.display = 'none';
+            } else {
+                service.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
