@@ -1,25 +1,21 @@
-# Heading Level 1
- HWRC-Slot-Booking-System:
-
+# HWRC-Slot-Booking-System:
+ 
 "In this project, I have developed a comprehensive Slot booking system for Household Waste Reuse Centres (HWRCs). The system enables users to easily schedule appointments, manage bookings, and efficiently utilize HWRC services." 🗓️🗓️
 
-## Heading Level 2
-Features
+## Features
 - User Registration and Login:  Secure user authentication and account management.
 - Slot Booking and Management: Easily book and manage appointment slots.
 - Calendar View: Visual representation of available slots for better scheduling.
 - Booking Confirmation and Notifications: Receive confirmation and reminders for appointments.
 - User Profile Management : Update and manage user information.
 
-### Heading Level 3
-Technologies Used
+### Technologies Used
 - Frontend: HTML, CSS, JavaScript
 - Backend: Express.js
 - Database: MongoDB
 
 
-### Heading Level 4
-Installation:
+#### Installation:
 npm install
 Set up environment variables: Create a .env file and add your configuration settings.
 
