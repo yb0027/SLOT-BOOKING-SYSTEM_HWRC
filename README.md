@@ -8,7 +8,10 @@ How about this:
 Frontend:HTML,CSS AND JS
 
 
-Backend:MongoDB,Express
+Backend:Express
+
+
+Database:MongoDB
 
 ![image](https://github.com/user-attachments/assets/dd8a9873-0c50-4d2d-8a6b-d851117636db)
 
